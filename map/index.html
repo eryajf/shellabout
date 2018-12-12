@@ -1,0 +1,97 @@
+<!--
+
+link : http://www.wujiayi.vip
+name : 吴佳轶 | WuJiaYi
+mail : hello@wujiayi.vip
+微信公众号： 吴佳轶同学 
+
+-->
+
+<html>
+	<head>
+
+		<!--引入jQuery框架-->
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<!--引入jVectorMap库-->
+		<script type="text/javascript" src="js/jquery-jvectormap-1.2.2.min.js"></script>
+		<!--引入样式表-->
+		<link href="js/jquery-jvectormap-1.2.2.css" rel="stylesheet" media="screen">
+
+
+		<!--引入中国地图数据库-->
+		<script type="text/javascript" src="js/jquery-jvectormap-cn-merc-en.js"></script>
+
+		<!--引入美国地图数据库-->
+		<!--script type="text/javascript" src="js/jquery-jvectormap-us-aea.js"></script-->
+		<!--引入世界地图数据库-->
+		<!--script type="text/javascript" src="js/jquery-jvectormap-world-mill.js"></script-->
+
+	</head>
+<body>
+	<!--background-color: 地图背景颜色-->
+	<div id="map" style="background-color:#353535"> </div>
+	<script>
+		$('#map').vectorMap({
+
+			// 此处更改地图
+			map: 'cn_merc_en',   // 中国地图
+			//map: 'us_aea',     // 美国地图
+			//map: 'world_mill', // 世界地图
+
+
+			backgroundColor: 'transparent',
+			zoomMin: 0.9, // 鼠标缩放时的最小比例
+			zoomMax: 2.4, // 鼠标缩放时的最大比例
+			focusOn: {
+				x: 0.55,
+				y: 2,
+				scale: 0.9
+			},
+			regionStyle: {
+				initial: {
+					fill: '#e5e5e5',   // 地图颜色
+					"fill-opacity": 1, // 省份（州）是否隐藏，鼠标滑动时显示; 1：显示，2：隐藏。
+					stroke: 'none',
+					"stroke-width": 0,
+					"stroke-opacity": 1
+				},
+				hover: {
+					fill: '#ccc',  // 鼠标滑动至某省份的高亮颜色。
+					"fill-opacity": 0.8
+				},
+				selected: {
+					fill: 'yellow'
+				},
+				selectedHover: {}
+			},
+			markerStyle: {
+		        initial: {
+		            fill: '#fd8888', // 足迹位置的填充颜色
+		            stroke: '#fff'   // 足迹位置的描边颜色
+		        },
+				hover: {
+					fill: '#fd2020', // 鼠标滑动至足迹位置后的填充颜色
+					stroke: '#fff',  // 鼠标滑动至足迹位置后的描边颜色
+					"fill-opacity": 0.8
+				},
+		    },
+			markers: [ // 足迹位置
+
+				// {latLng: [经度（保留两位小数）, 纬度（保留两位小数）], name: '城市名称'},
+				// 推荐查询经纬度网站：http://www.gpsspg.com/maps.htm
+
+				{latLng: [33.45,113.11 ], name: '2014-4-28-平顶山-平西湖'},
+				{latLng: [34.33,112.28 ], name: '2016-10-4-洛阳-龙门石窟'},
+				{latLng: [35.27,113.28 ], name: '2017-4-2-新乡-宝泉'},
+		        {latLng: [39.90, 116.39], name: '2017-9-28-北京-天安门'},
+				{latLng: [30.13, 120.21], name: '2017-10-30-杭州-湘湖'},
+				{latLng: [30.22, 120.12], name: '2018-1-14-杭州-西湖'},
+				{latLng: [29.99, 120.58], name: '2018-4-6-绍兴-鲁迅故居'},
+				{latLng: [31.40, 119.93], name: '2018-4-30-宜兴-芳桥镇'},
+				{latLng: [30.19, 120.08], name: '2018-6-2-杭州-云溪竹径'},
+				{latLng: [30.94, 120.88], name: '2018-6-23-嘉兴-西塘古镇'},
+				{latLng: [29.79, 119.69], name: '2018-8-31-杭州-桐庐团建'}
+		    ]
+		});
+	</script>
+</html>
