@@ -178,19 +178,6 @@ Demo : <http://download.wujiayi.vip/map/index.html>
 
 可适配手机端和等比例缩放。
 
-## 获取源码
-
-GitHub : <https://github.com/HelloWuJiaYi/jVectorMap-Footprint>
-
-## 广告时间
-
-欢迎访问我的个人博客:
-
-<http://www.wujiayi.vip>
-
-我的微信公众号：
-
-`吴佳轶同学`
-
+参考：http://www.wujiayi.vip
 
 
