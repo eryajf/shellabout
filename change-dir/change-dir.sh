@@ -1,4 +1,6 @@
 #!/bin/bash
+# author: eryajf
+# time: 2019年7月
 #说明：这个脚本用于将Windows下编写文档中的图片路径与Mac兼容
 # 我的Windows路径定义为 D:\龙盘虎踞\Typora\typora-pic\，执行脚本之后路径将会转换为 /D:/龙盘虎踞/Typora/typora-pic/ ，从而兼容Mac端。
 #有如下注意事项：
